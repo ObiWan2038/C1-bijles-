@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <string.h>
+
+int checkNumbers (char *);
+
+int main()
+{
+   char nummer[12];
+   printf("Welk nummer ga je ingeven?\n");
+   (void)scanf("%s", &nummer);
+
+   int kaas = checkNumbers(nummer);
+
+   switch(kaas)
+   {
+    case 1:
+    printf("Gekozen nummer is %d\n", kaas);
+    break;
+    case 2:
+    printf("Gekozen nummer is %d\n", kaas);
+    break;
+    case 3:
+    printf("Gekozen nummer is %d\n", kaas);
+    break;
+    case 4:
+    printf("Gekozen nummer is %d\n", kaas);
+    break;
+    case 5:
+    printf("Gekozen nummer is %d\n", kaas);
+    break;
+    case 6:
+    printf("Gekozen nummer is %d\n", kaas);
+    break;
+    case 7:
+    printf("Gekozen nummer is %d\n", kaas);
+    break;
+    case 8:
+    printf("Gekozen nummer is %d\n", kaas);
+    break;
+    case 9:
+    printf("Gekozen nummer is %d\n", kaas);
+    break;
+    default:
+        {
+            printf("Uw nummer is ongeldig");
+        }
+   }
+
+
+   return 0;
+}
+
+int checkNumbers(char * nummer)
+{
+    if(strcmp(nummer,"een") == 0)
+        {
+        return 1;
+        }
+    if(strcmp(nummer,"twee") == 0)
+        {
+        return 2;
+        }
+    if(strcmp(nummer,"drie") == 0)
+        {
+        return 3;
+        }
+    if(strcmp(nummer,"vier") == 0)
+        {
+        return 4;
+        }
+    if(strcmp(nummer,"vijf") == 0)
+        {
+        return 5;
+        }
+    if(strcmp(nummer,"zes") == 0)
+        {
+        return 6;
+        }
+    if(strcmp(nummer,"zeven") == 0)
+        {
+        return 7;
+        }
+    if(strcmp(nummer,"acht") == 0)
+        {
+        return 8;
+        }
+    if(strcmp(nummer,"negen") == 0)
+        {
+        return 9;
+        }
+}
